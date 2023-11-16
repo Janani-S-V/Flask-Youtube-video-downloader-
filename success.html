@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>downloaded</title>
+    <style>
+        a:link, a:visited {
+          background-color: white;
+          color: black;
+          border: 2px solid green;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+        }
+        a:hover, a:active {
+          background-color: green;
+          color: white;
+        }
+        </style>
+</head>
+<body style="background-color:#E1F8DC">
+    <center><br><br>
+    <h1 style="color:black;font-size:200%;">Video successfully downloaded</h1><br><br><br>
+    <div style="white-space: pre"> 
+    <a href="{{ url_for('uploaded_file', filename=filename) }}" download target="_blank">click to unlock the Video</a>
+    </div>
+    <a href="/">Go back</a>
+    </center>
+</body>
+</html>
